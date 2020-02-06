@@ -1,0 +1,3 @@
+[submodule "locales"]
+	path = src/assets/locales
+	url = https://github.com/esgi-toolchain/strings.git
