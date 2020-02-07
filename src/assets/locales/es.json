@@ -1,0 +1,12 @@
+{
+  "tags": {
+    "name": "Nombre",
+    "coefficient": "Coefficiente",
+    "cc": "Evaluación",
+    "exam": "Examen",
+    "number": "No ."
+  },
+  "button": {
+    "add": "Añadir"
+  }
+}

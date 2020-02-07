@@ -1,3 +1,12 @@
 {
-
+  "tags": {
+    "name": "Nom",
+    "coefficient": "coefficient",
+    "cc": "Contrôle continue",
+    "exam": "Examen",
+    "number": "N ."
+  },
+  "button": {
+    "add": "Ajouter"
+  }
 }
