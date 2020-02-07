@@ -9,7 +9,7 @@ import {MatTableDataSource} from '@angular/material';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   title = 'my-tool-chain-front';
   students: Student[];
   current: MatTableDataSource<Skill> = new MatTableDataSource<Skill>();
@@ -35,9 +35,10 @@ export class AppComponent implements OnInit{
     });
   }
 
+
   addSkill(): void {
     this.skillService.create(this.currentSkill).subscribe(skill => {
-      this.current.data = [...this.current.data, skill];
+        this.current.data = [...this.current.data, skill];
       this.currentSkill = {cc: 0, coef: 0, exam: 0, id: 0, name: '', studentId: this.currentSkill.studentId};
     });
   }
