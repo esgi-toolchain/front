@@ -38,7 +38,7 @@ export class AppComponent implements OnInit {
 
   addSkill(): void {
     this.skillService.create(this.currentSkill).subscribe(skill => {
-        this.current.data = [...this.current.data, skill];
+      this.current.data = [...this.current.data, skill];
       this.currentSkill = {cc: 0, coef: 0, exam: 0, id: 0, name: '', studentId: this.currentSkill.studentId};
     });
   }
