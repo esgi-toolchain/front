@@ -4,8 +4,6 @@
 
 # base image
 FROM node:12-alpine as build
-
-RUN apk --update --no-cache add git
 # set working directory
 WORKDIR /app
 
@@ -22,7 +20,6 @@ RUN rm -rf /app/node_modules && rm package-lock.json
 RUN npm install
 RUN npm install -g @angular/cli@8
 
-RUN npm run replace-locales
 # generate build
 RUN ng build --prod="true" --output-path=dist
 
